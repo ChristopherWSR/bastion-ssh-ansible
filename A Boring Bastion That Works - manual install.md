@@ -4,7 +4,9 @@
 
 ## The Actual Problem
 
-So, if you are still uncertain if this solution is for you, this section is devoted to that discussion. You’ve found that a software as a service company wants to hook into a database you manage. So why not just poke a hole in your firewall and give them access? You could even add a rule that makes it so only their IP address can connect to you.
+If you’re evaluating whether the bastion ssh approach makes sense, this section explains the tradeoffs involved. 
+
+You’ve found that a software as a service company wants to hook into a database you manage. So why not just poke a hole in your firewall and give them access? You could even add a rule that makes it so only their IP address can connect to you.
 
 The problem comes in when you consider that database software was not made to be exposed to the internet. As software ages, more and more vulnerabilities are found, and this is especially true with software meant to be protected from the internet. Even if you have a very long password on your database, exposing it directly increases your attack surface in ways that firewalls alone do not fully mitigate.
 
